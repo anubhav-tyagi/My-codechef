@@ -1,3 +1,6 @@
+Problem Statement  (link)- https://www.codechef.com/FEB18/problems/CHEFCHR
+
+SOLUTION-
 for t in range(int(input())):
     a=list(input())
     q=0
