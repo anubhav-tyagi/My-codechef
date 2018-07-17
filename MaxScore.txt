@@ -1,3 +1,6 @@
+Problem Statement  (link)- https://www.codechef.com/JAN18/problems/MAXSC
+
+SOLUTION-
 for t in range(int(input())):
     n=int(input())
     a=[]
