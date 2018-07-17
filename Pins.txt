@@ -1,0 +1,6 @@
+Problem Statement  (link)- https://www.codechef.com/JULY18B/problems/PINS
+
+SOLUTION-
+for t in range(int(input())):
+    n=int(input())
+    print("1 "+str(10**(n//2)))
