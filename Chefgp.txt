@@ -1,0 +1,49 @@
+Problem Statement  (link)- https://www.codechef.com/OCT17/problems/CHEFGP
+
+SOLUTION-
+for t in range(int(input())):
+    st=list(input())
+    x,y=map(int,input().split())
+    a=0
+    b=0
+    a=st.count('a')
+    b=st.count('b')
+    c=[]
+    d=[]
+    while a>0:
+        if a>=x:
+            c.append(x*'a')
+        if a<x:
+            c.append((a%x)*'a')
+        a=a-x
+    while b>0:
+        if b>=y:
+            d.append(y*'b')
+        if b<y:
+            d.append((b%y)*'b')
+        b=b-y
+    h=0
+    o=len(c)
+    p=len(d)
+    if o>p:
+        for m in range(o-1):
+            print(c[m],end='')
+            if h<(o-p-1):
+                print('*',end='')
+                h=h+1
+            else:
+                print(d[m-h],end='')
+        print(c[o-1])
+    if o<p:
+        for m in range(p-1):
+            print(d[m],end='')
+            if h<(p-o-1):
+                print('*',end='')
+                h=h+1
+            else:
+                print(c[m-h],end='')
+        print(d[p-1])
+    if o==p:
+        for m in range(o):
+            print(c[m]+d[m],end='')
+        print() 
