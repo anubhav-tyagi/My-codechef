@@ -1,0 +1,17 @@
+Problem Statement  (link)- https://www.codechef.com/OCT17/problems/PERFCONT/
+
+SOLUTION-
+for i in range(int(input())):
+    n,p=map(int,input().split())
+    a=[int(x) for x in input().split()]
+    c=0
+    h=0
+    for i in range(n):
+        if a[i]<=(p//10):
+            h=h+1
+        elif a[i]>=(p//2):
+            c=c+1
+    if c==1 and h==2:
+        print("yes")
+    else:
+        print("no") 
