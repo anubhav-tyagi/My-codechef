@@ -1,0 +1,18 @@
+Problem Statement  (link)- https://www.codechef.com/COOK88/problems/RNDPAIR/
+
+SOLUTION-
+for t in range(int(input())):
+    n=int(input())
+    a=[int(x) for x in input().split()]
+    b=[]
+    b=a
+    c=0
+    b.sort()
+    s=b[n-1]+b[n-2]
+    for i in range(n):
+        for j in range(n-1,i,-1):
+            if a[i]+a[j]==s:
+                c=c+1
+            else:
+                break
+    print((2*c)/(n*(n-1))) 
