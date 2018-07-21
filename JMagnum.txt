@@ -1,0 +1,20 @@
+Problem Statement  (link)-https://www.codechef.com/LOCSEP17/status/JMAGNUM
+
+SOLUTION-
+for t in range(int(input())):
+    l,r=map(int,input().split())
+    s=0
+    for i in range(l,r+1):
+        for j in range(2,i+1):
+            if i%j==0:
+                x=0
+                for a in range(2,(j//2)+1):
+                    if j%a==0:
+                        x=x+1
+                if x==0:
+                    c=j
+                    while c>0:
+                        n=c%10
+                        s=s+n
+                        c=c//10
+    print(s) 
