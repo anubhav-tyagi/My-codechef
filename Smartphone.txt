@@ -1,0 +1,14 @@
+Problem Statement  (link)- https://www.codechef.com/ZCOPRAC/problems/ZCO14003/
+
+SOLUTION-
+n=int(input())
+b=[]
+for i in range(n):
+    b.append(int(input()))
+b.sort()
+r=[]
+k=n
+for i in range(n):
+    r.append(b[i]*k)
+    k=k-1
+print(max(r)) 
