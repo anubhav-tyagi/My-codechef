@@ -1,0 +1,16 @@
+Problem Statement  (link)-https://www.codechef.com/ZCOPRAC/problems/ZCO15002/
+
+SOLUTION-
+n,k=map(int,input().split())
+a=[int(x) for x in input().split()]
+a.sort()
+s=0
+for i in range(n-1):
+    if abs(a[i]-a[i+1])>=k:
+        s=s+n-1-i
+    else:
+        for j in range(i,n):
+            if a[j]-a[i]>=k:
+                s=s+n-j
+                break
+print(s)  
