@@ -1,0 +1,13 @@
+Problem Statement  (link)-https://www.codechef.com/ZCOPRAC/problems/ZCO13001/
+
+SOLUTION-
+n=int(input())
+a=[int(x) for x in input().split()]
+b=[]
+for i in range(n-1):
+    for j in range(i+1,n):
+        if a[i]>a[j]:
+            b.append(a[i]-a[j])
+        else:
+            b.append(a[j]-a[i])
+print(sum(b)) 
