@@ -1,0 +1,12 @@
+Problem Statement  (link)-https://www.codechef.com/NPLQ2017/problems/NPL1701A/
+
+SOLUTION-
+num1,num2,num3=map(int,input().split())
+s=0
+if (num1 < num2) and (num1 < num3):
+    s=num1
+elif (num2 < num1) and (num2 < num3):
+    s=num2
+else:
+    s=num3
+print(s) 
