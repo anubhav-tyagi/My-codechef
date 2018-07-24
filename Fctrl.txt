@@ -1,0 +1,28 @@
+Problem Statement  (link)-https://www.codechef.com/problems/FCTRL
+
+SOLUTION-
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    int c=1;
+ long int n,i,a=1,s,j=5,t;
+ scanf("%ld",&t);
+ for(i=0;i<t;i++)
+ {
+     s=0;
+     a=1;
+     scanf("%ld",&n);
+ while(a>0)   
+ {
+     a=n/j;
+     s=s+a;
+     c++;
+     j=pow(5,c);
+ }
+ printf("%ld\n",s);
+ c=1;
+ j=5;
+ }
+	return 0;
+}
