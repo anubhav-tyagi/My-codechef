@@ -1,0 +1,24 @@
+Problem Statement  (link)-https://www.codechef.com/problems/LISDIGIT
+
+SOLUTION-
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+	int t,n,i,d,*a;
+	scanf("%d",&t);
+	while(t>0)
+	{
+		scanf("%d",&n);
+		a=(int *)malloc(n*sizeof(int));
+		for(i=0;i<n;i++)
+		{
+			scanf("%d",&a[i]);
+			printf("%d",a[i]);
+		}
+		printf("\n");
+		t--;
+	}
+	return 0;
+}
