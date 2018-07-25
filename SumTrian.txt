@@ -1,0 +1,13 @@
+Problem Statement  (link)-https://www.codechef.com/problems/SUMTRIAN
+
+SOLUTION-
+for i in range(int(input())):
+    a=int(input())
+    list=[]
+    for i in range(a):
+        list.append([int(x) for x in input().split()])
+    for k in range(a-1,0,-1):
+        for j in range(0,k):
+            s=max(list[k][j],list[k][j+1])
+            list[k-1][j]+=s
+    print(list[0][0]) 
