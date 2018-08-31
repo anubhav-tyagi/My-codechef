@@ -18,3 +18,4 @@ for t in range(int(input())):
             p=d[n]
         else:
             i=0
+.....
