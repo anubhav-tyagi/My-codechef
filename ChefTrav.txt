@@ -17,4 +17,4 @@ for t in range(int(input())):
         if d[n] in s:
             p=d[n]
         else:
-            i=0 .......
+            i=0 .
