@@ -9,3 +9,4 @@ for t in range(int(input())):
         a.append(c+i)
     a.sort()
     print(a[(n+k)//2]) 
+......
